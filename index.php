@@ -4,9 +4,10 @@
    //digite seu peso na varial "p"
    $p = 75;
    //calculo do IMC
-   $IMC = $p/($a*$a);
+   $calculo = $p/($a*$a);
 
-echo $IMC;
+//tratamento de saida de casas decimais   
+echo $IMC = number_format($calculo,1,',','');
 
 if ($IMC < "18.5") {
     echo " ----> abaixo do peso";
